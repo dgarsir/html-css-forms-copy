@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <div id="form-outer">
+        <p id="description">Tell me about your favorite animal!</p>
+        <form id="survey-form" method="GET" action="">
+            <div class="labels">
+                <label for="name" id="name-label">*Name: </label>
+            </div>
+            <input type="name" name="name" id="name" 
+            class="input-field" placeholder="Enter your name" required>
+            <div class="labels">
+                <label for="email" id="email-label">*Email: </label>
+            </div>
+            <input type="email" name="email" id="email" 
+            class="input-field" placeholder="Enter your email" required>
+            <div class="labels">
+                <label for="age" id="age-label">*Age: </label>
+            </div>
+            <input type="number" name="age" id="age"
+            class="input-field" placeholder="Age" min="1" max="111" required>
+            <div class="labels">
+                <label for="color_desc" id="color_desc-labl">
+                    What color best describes your animal?
+                </label>
+            </div>
+            <select id="dropdown" name="color_desc" class="dropdown">
+                <option disabled value>Select an option</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+                <option value="orange">Orange</option>
+                <option value="pink">Pink</option>
+                <option value="purple">Purple</option>
+                <option value="black">Black</option>
+                <option value="brown">Brown</option>
+                <option value="white">White</option>
+            </select>
+            <div class="labels">
+                <label for="MRA" id="MRA-label">Please classify your animal.</label>
+            </div>
+            <ul style="list-style: none;">
+                <li class="radio">
+                    <label>Mammal
+                        <input name="radio-buttons" value="1" type="radio"
+                        class="MRA">
+                    </label>
+                </li>
+                <li class="radio">
+                    <label>Reptile
+                        <input name="radio-buttons" value="2" type="radio"
+                        class="MRA">
+                    </label>
+                </li>
+                <li class="radio">
+                    <label>Amphibian
+                        <input name="radio-buttons" value="3" type="radio"
+                        class="MRA">
+                    </label>
+                </li>
+            </ul>
+            <div class="labels">
+                <label for="features" name="features-label">
+                    Does your animal exhibit any of these features?
+                </label>
+            </div>
+            <ul id="features" style="list-style: none;">
+                <li class="checkbox">
+                    <label>
+                        <input name="feature" value="1" type="checkbox" 
+                        class="aniFeature">
+                        Has more than two eyes?
+                    </label>
+                </li>
+            </ul>
+            <ul id="features" style="list-style: none;">
+                    <li class="checkbox">
+                        <label>
+                            <input name="feature" value="2" type="checkbox" 
+                            class="aniFeature">
+                            Has more than 4 legs, or no legs at all?
+                        </label>
+                    </li>
+            </ul>
+            <ul id="features" style="list-style: none;">
+                    <li class="checkbox">
+                        <label>
+                            <input name="feature" value="3" type="checkbox" 
+                            class="aniFeature">
+                            Is extinct?
+                        </label>
+                    </li>
+            </ul>
+            <ul id="features" style="list-style: none;">
+                    <li class="checkbox">
+                        <label>
+                            <input name="feature" value="4" type="checkbox" 
+                            class="aniFeature">
+                            Lives in the water?
+                        </label>
+                    </li>
+            </ul>
+            <ul id="features" style="list-style: none;">
+                    <li class="checkbox">
+                        <label>
+                            <input name="feature" value="5" type="checkbox" 
+                            class="aniFeature">
+                            Is frequently eaten for dinner?
+                        </label>
+                    </li>
+            </ul>
+            <ul id="features" style="list-style: none;">
+                    <li class="checkbox">
+                        <label>
+                            <input name="feature" value="6" type="checkbox" 
+                            class="aniFeature">
+                            Is a common household pet?
+                        </label>
+                    </li>
+            </ul>
+            <div class="labels">
+                <label for="myAnimal" name="myAnimal-label">
+                    Please enter the name of your animal!
+                </label>
+            </div>
+            <textarea id="myAnimal" class="input-field" name="myAnimal" 
+            placeholder="Please enter your chosen animal here.">
+            </textarea>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+    <p id="footer">Created by Carlton Welch, 2019</p>
+</body>
+</html>
